@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';//importing React interface from react core library react.
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {Box} from '@mui/material';
 
@@ -6,8 +6,8 @@ import {Feed, ChannelDetail, VideoDetail, SearchFeed, Navbar} from './Components
 
 const App = () => (
   <BrowserRouter>
-  <Box sx={{background: 'red'}}>
-    <Navbar />
+  <Box sx={{background: '#000'}}>
+  <Navbar />
     <Routes>
         <Route path ="/" exact element ={<Feed />} />
         <Route path ="/video/:id" exact element ={<VideoDetail />} />
